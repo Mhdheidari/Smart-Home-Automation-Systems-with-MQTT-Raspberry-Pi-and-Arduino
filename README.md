@@ -24,6 +24,9 @@ IoT devices face challenges such as assigning unique IP addresses to each sensor
 <br /><br /><br /> 
 
 - **MQTT Broker (Mosquitto)**: The Mosquitto MQTT broker serves as the central hub for receiving, filtering, and distributing messages between IoT devices and clients. In our system, it runs on the Raspberry Pi.
+<p align="center"><b>Raspberry Pi as a Broker:</b> <br />
+<img src="https://i.imgur.com/xAm47ZK.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
+<br /><br /><br /> 
   
 - **Python**: We implement various MQTT protocol features using Python, a high-level general-purpose programming language. Python libraries such as `paho-mqtt`, `tkinter` (for GUI), and `matplotlib` are utilized for developing the subscriber, subscriber dashboard, and control functionalities.
   
@@ -46,6 +49,9 @@ We create a custom interactive Graphical User Interface (GUI) using Python to vi
 ## Technology Integration
 The system integrates Arduino microcontrollers for sensor data collection:
 - **Ultrasonic Sensor and Buzzer**: Connected to pins 13 and 14 on the first Arduino.
+<p align="center"><b>Ultrasonic sensor and Buzzer:</b> <br />
+<img src="https://i.imgur.com/zvpfwEP.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
+<br /><br /><br /> 
   
 - **Light and Temperature Sensor, LED, and Fan**: Connected to pins A0, A2, 6, and 11 on the second Arduino.
 <p align="center"><b>Light and temperature sensor, LED and fan:</b> <br />
