@@ -14,21 +14,43 @@ IoT devices face challenges such as assigning unique IP addresses to each sensor
 ## System Components and Software
 - **Arduino IDE**: An open-source software environment for code scripting and uploading to microcontrollers. It enables communication with Arduino microcontrollers and provides a serial monitor for viewing sensor data.
   
+<p align="center">
+<b>Arduino IDE output based on the door’s distance and condition:</b>  <br />
+<img src="https://i.imgur.com/MIkRSEZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br /><br /><br />
+<p align="center"><b>Arduino IDE output based on the temperature and light’s condition:</b> <br />
+<img src="https://i.imgur.com/Isoijjq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
+<br /><br /><br /> 
+
 - **MQTT Broker (Mosquitto)**: The Mosquitto MQTT broker serves as the central hub for receiving, filtering, and distributing messages between IoT devices and clients. In our system, it runs on the Raspberry Pi.
   
 - **Python**: We implement various MQTT protocol features using Python, a high-level general-purpose programming language. Python libraries such as `paho-mqtt`, `tkinter` (for GUI), and `matplotlib` are utilized for developing the subscriber, subscriber dashboard, and control functionalities.
+  
+<p align="center"><b>Two publishers publishing data simultaneously:</b> <br />
+<img src="https://i.imgur.com/KcMVd1v.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
+<br /><br /><br /> 
+<p align="center"><b>The console output of the subscriber:</b> <br />
+<img src="https://i.imgur.com/Bzz9KOp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
+<br /><br /><br /> 
 
 ## Interactive Dashboard
 We create a custom interactive Graphical User Interface (GUI) using Python to visualize and display real-time data received from publishers via the MQTT broker. The GUI includes two distinct interfaces:
 - **Master Subscriber GUI**: Displays data from all subscribed topics.
   
 - **Individual Subscriber GUI**: Allows users to select specific topics using toggle buttons for customized data visualization.
+<p align="center"><b>Arduino IDE output based on the temperature and light’s condition:</b> <br />
+<img src="https://i.imgur.com/DMU4O2n.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
+<br /><br /><br /> 
 
 ## Technology Integration
 The system integrates Arduino microcontrollers for sensor data collection:
 - **Ultrasonic Sensor and Buzzer**: Connected to pins 13 and 14 on the first Arduino.
   
 - **Light and Temperature Sensor, LED, and Fan**: Connected to pins A0, A2, 6, and 11 on the second Arduino.
+<p align="center"><b>Light and temperature sensor, LED and fan:</b> <br />
+<img src="https://i.imgur.com/Kp4YfKi.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
+<br /><br /><br /> 
 
 ## Results and Observations
 - **Real-time Monitoring**: Graphical representations of door status (Open/Close), temperature, light conditions, and door distance are displayed through the GUI.
@@ -41,9 +63,7 @@ The system integrates Arduino microcontrollers for sensor data collection:
 Our experiment highlights the effectiveness of the MQTT protocol in conjunction with Raspberry Pi as a lightweight solution for home automation. The system demonstrates minimal bandwidth consumption, energy efficiency, and centralized control with a single IP address for all devices. Future directions include investigating the security aspects of the Mosquitto MQTT broker and conducting comparative studies on MQTT's efficiency and energy consumption compared to other messaging models.
 
 
-<p align="center">
-<b>Project Scenario:</b>  <br />
-<img src="https://i.imgur.com/qVqBZJo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 <br /><br /><br />  
 <b>Install Oracle VirtualBox:</b> <br />
 <img src="https://i.imgur.com/Jrrj3lR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
